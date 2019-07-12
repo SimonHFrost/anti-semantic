@@ -78,6 +78,10 @@ main {
     border: var(--standard-border);
 }
 
+main .event {
+    margin-bottom: 16px;
+}
+
 footer {
     display: flex;
     align-items: center;
