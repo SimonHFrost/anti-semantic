@@ -13,8 +13,12 @@ header {
     display: flex;
     align-items: center;
     height: 160px;
-    background-color: lightgray;
+    background-color: #CCC;
     padding: 32px;
+}
+
+header h1 {
+    letter-spacing: 4px;
 }
 
 header .logo {
@@ -24,13 +28,18 @@ header .logo {
 
 .content {
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+}
+
+.content h1 {
+    margin-top: 0;
+    text-decoration: underline;
 }
 
 nav {
     display: flex;
     flex-direction: column;
-    background-color: red;
+    background-color: #EEE;
     width: 120px;
     padding: 32px;
 }
@@ -42,10 +51,13 @@ nav .folder {
 
 nav .folder-link {
     margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 main {
     flex: 1;
-    background-color: blue;
+    background-color: #EEE;
     padding: 32px;
 }
