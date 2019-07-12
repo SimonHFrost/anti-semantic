@@ -6,10 +6,24 @@ header {
     display: flex;
     align-items: center;
     height: 200px;
-    background-color: gray;
+    background-color: lightgray;
     padding: 32px;
 }
 
-.logo {
+header .logo {
     width: 100px;
+    margin-right: 32px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row
+}
+
+nav {
+    background-color: red;
+}
+
+main {
+    background-color: blue;
 }
