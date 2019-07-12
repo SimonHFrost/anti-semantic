@@ -1,5 +1,6 @@
 :root {
     --standard-border: solid 2px gray;
+    --darker-border: solid 1px black;
     --color-primary: #ccc;
     --color-secondary: #eee;
 }
@@ -81,13 +82,34 @@ main {
 
 main .event {
     margin-bottom: 16px;
+    width: 400px;
+    border: var(--darker-border);
+}
+
+main .event .event-header {
+    display: flex;
+    align-items: center;
+    border: var(--darker-border);
+    padding: 0 8px;
+}
+
+main .event .event-header h3 {
+    flex: 1;
+}
+
+main .event .event-details {
+    border: var(--darker-border);
+    padding: 0 8px;
+}
+
+main .event .event-facebook-image {
+    width: 24px;
 }
 
 main button {
     padding: 8px;
-    border: 2px solid;
-    box-shadow: 2px 2px lightgrey;
-    border-radius: 1px;
+    /* user border var? */
+    border: solid 2px black;
     cursor: pointer;
 }
 
@@ -113,20 +135,14 @@ footer .footer-link {
 
 /* Trippy effect */
 
-/* Basic 3d style border */
-/* @keyframes trip-out {
-    from { background-color: #FF0000; }
-    50%   { background-color: #00FF00; }
-    to   { background-color: #0000FF; }
-} */
-
 @keyframes trip-out {
     from { box-shadow: 1px 1px 0px #F00; }
     50%   { box-shadow: -1px 1px 0px #0F0; }
     to   { box-shadow: 1px -1px 0px #00F; }
 }
 
-.main-content {
+.main-content,
+.event {
     animation: 20s trip-out infinite alternate;
     /* box-shadow: 0px 0px 5px #ddd; */
 }
