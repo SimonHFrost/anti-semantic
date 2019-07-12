@@ -1,3 +1,7 @@
+:root {
+    --standard-border: solid 2px gray;
+}
+
 * {
     font-family: 'Roboto', sans-serif;
     color: #333;
@@ -15,6 +19,7 @@ header {
     height: 160px;
     background-color: #CCC;
     padding: 32px;
+    border: var(--standard-border);
 }
 
 header h1 {
@@ -31,7 +36,7 @@ header .logo {
     flex-direction: row;
 }
 
-.content h1 {
+.content h2 {
     margin-top: 0;
     text-decoration: underline;
 }
@@ -42,6 +47,7 @@ nav {
     background-color: #EEE;
     width: 120px;
     padding: 32px;
+    border: var(--standard-border);
 }
 
 nav .folder {
@@ -60,4 +66,5 @@ main {
     flex: 1;
     background-color: #EEE;
     padding: 32px;
+    border: var(--standard-border);
 }
