@@ -1,6 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
 header {
+    display: flex;
+    align-items: center;
     height: 200px;
     background-color: gray;
+    padding: 32px;
 }
 
 .logo {
