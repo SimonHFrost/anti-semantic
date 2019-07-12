@@ -1,5 +1,7 @@
 :root {
     --standard-border: solid 2px gray;
+    --color-primary: #ccc;
+    --color-secondary: #eee;
 }
 
 * {
@@ -17,7 +19,7 @@ header {
     display: flex;
     align-items: center;
     height: 160px;
-    background-color: #CCC;
+    background-color: var(--color-primary);
     padding: 32px;
     border: var(--standard-border);
 }
@@ -44,7 +46,7 @@ header .logo {
 nav {
     display: flex;
     flex-direction: column;
-    background-color: #EEE;
+    background-color: var(--color-secondary);
     width: 120px;
     padding: 32px;
     border: var(--standard-border);
@@ -64,7 +66,23 @@ nav .folder-link {
 
 main {
     flex: 1;
-    background-color: #EEE;
+    background-color: --color-secondary;
     padding: 32px;
     border: var(--standard-border);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    background-color: var(--color-primary);
+    border: var(--standard-border);
+}
+
+footer .spacer {
+    flex: 1;
+}
+
+footer .footer-link {
+    margin-right: 16px;
 }
