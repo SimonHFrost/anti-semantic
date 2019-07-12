@@ -82,6 +82,14 @@ main .event {
     margin-bottom: 16px;
 }
 
+main button {
+    padding: 8px;
+    border: 2px solid;
+    box-shadow: 2px 2px lightgrey;
+    border-radius: 1px;
+    cursor: pointer;
+}
+
 footer {
     display: flex;
     align-items: center;
