@@ -32,7 +32,12 @@ nav .folder {
     width: 40px;
 }
 
+nav .folder-link {
+    margin-bottom: 16px;
+}
+
 main {
-    background-color: blue;
     flex: 1;
+    background-color: blue;
+    padding: 32px;
 }
