@@ -1,7 +1,7 @@
 :root {
     --standard-border: solid 2px gray;
     --darker-border: solid 1px black;
-    --color-primary: #eee;
+    --light-gray: #eee;
 }
 
 * {
@@ -20,7 +20,7 @@ header {
     display: flex;
     align-items: center;
     height: 160px;
-    background-color: var(--color-primary);
+    background-color: var(--light-gray);
     padding: 32px;
     border: var(--standard-border);
 }
@@ -108,14 +108,14 @@ main button {
     /* user border var? */
     border: solid 2px black;
     cursor: pointer;
-    background-color: var(--color-primary);
+    background-color: var(--light-gray);
 }
 
 footer {
     display: flex;
     align-items: center;
     height: 40px;
-    background-color: var(--color-primary);
+    background-color: var(--light-gray);
     border: var(--standard-border);
 }
 
