@@ -1,7 +1,7 @@
 :root {
     --standard-border: solid 2px gray;
     --darker-border: solid 1px black;
-    --light-gray: #eee;
+    --light-gray: #d9d9d9;
 }
 
 * {
