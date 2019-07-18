@@ -143,7 +143,26 @@ main .event .event-header h3 {
 
 main .event .event-details {
     border: var(--darker-border);
-    padding: 0 8px;
+}
+
+main .event .event-details .event-picture {
+    transition: filter 100ms ease;
+    filter: grayscale(100);
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    main .event .event-details .event-picture {
+        filter: grayscale(0);
+    }
+}
+
+main .event .event-details .event-picture:hover {
+    filter: grayscale(0);
+}
+
+main .event .event-details p {
+    margin: 8px;
 }
 
 main .event .event-facebook-image {
