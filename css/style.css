@@ -1,8 +1,7 @@
 :root {
     --standard-border: solid 2px gray;
     --darker-border: solid 1px black;
-    --color-primary: #ccc;
-    --color-secondary: #eee;
+    --color-primary: #eee;
 }
 
 * {
@@ -55,7 +54,6 @@ header .logo {
 nav {
     display: flex;
     flex-direction: column;
-    background-color: var(--color-secondary);
     width: 120px;
     padding: 32px;
     border: var(--standard-border);
@@ -75,7 +73,6 @@ nav .folder-link {
 
 main {
     flex: 1;
-    background-color: --color-secondary;
     padding: 32px;
     border: var(--standard-border);
 }
@@ -111,6 +108,7 @@ main button {
     /* user border var? */
     border: solid 2px black;
     cursor: pointer;
+    background-color: var(--color-primary);
 }
 
 footer {
