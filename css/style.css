@@ -16,6 +16,12 @@
     margin: 0 auto !important;
 }
 
+@media (max-width: 600px) {
+    .main-content {
+        width: 100vw;
+    }
+}
+
 header {
     display: flex;
     align-items: center;
@@ -23,6 +29,14 @@ header {
     background-color: var(--light-gray);
     padding: 32px;
     border: var(--standard-border);
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        height: inherit;
+        text-align: center;
+    }
 }
 
 header h1,
@@ -41,9 +55,22 @@ header .logo {
     margin-right: 32px;
 }
 
+@media (max-width: 600px) {
+    header .logo {
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+}
+
 .content {
     display: flex;
     flex-direction: row;
+}
+
+@media (max-width: 600px) {
+    .content {
+        flex-direction: column;
+    }
 }
 
 .content h2 {
@@ -59,6 +86,14 @@ nav {
     border: var(--standard-border);
 }
 
+@media (max-width: 600px) {
+    nav {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
 nav .folder {
     width: 40px;
     margin-bottom: 8px;
@@ -71,6 +106,12 @@ nav .folder-link {
     align-items: center;
 }
 
+@media (max-width: 600px) {
+    nav .folder-link {
+        margin-bottom: 0;
+    }
+}
+
 main {
     flex: 1;
     padding: 32px;
@@ -81,6 +122,12 @@ main .event {
     margin-bottom: 16px;
     width: 400px;
     border: var(--darker-border);
+}
+
+@media (max-width: 600px) {
+    main .event {
+        width: 100%;
+    }
 }
 
 main .event .event-header {
@@ -109,6 +156,12 @@ main button {
     border: solid 2px black;
     cursor: pointer;
     background-color: var(--light-gray);
+}
+
+@media (max-width: 600px) {
+    main button {
+        width: 100%;
+    }
 }
 
 footer {
