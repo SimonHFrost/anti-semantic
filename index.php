@@ -1,17 +1,18 @@
 <head>
     <title>ANTISEMANTIC</title>
     <meta charset="utf-8" /> 
-    <link rel="shortcut icon" href="images/logo.svg">
+    <link rel="shortcut icon" href="<?php echo get_bloginfo('template_directory'); ?>/images/logo.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="lib/normalize.css" rel="stylesheet">
+    
+    <link href="<?php echo get_bloginfo('template_directory'); ?>/css/style.css" rel="stylesheet">
+    <link href="<?php echo get_bloginfo('template_directory'); ?>/lib/normalize.css" rel="stylesheet">
 </head>
 <body>
     <div class="main-content">
         <header>
-            <a href="/"><img class="logo" src="images/logo.svg"/></a>
+            <a href="/"><img class="logo" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo.svg"/></a>
             <div>
                 <h1>ANTISEMANTIC</h1>
                 <h3>Raven mit Anstand und Würde</h3>
@@ -20,13 +21,13 @@
         <div class="content">
             <nav>
                 <a class="folder-link" href="/">
-                    <img class="folder" src="images/folder.png"/><label>Heim</label>
+                    <img class="folder" src="<?php echo get_bloginfo('template_directory'); ?>/images/folder.png"/><label>Heim</label>
                 </a>
                 <a class="folder-link" href="#">
-                    <img class="folder" src="images/folder.png"/><label>Events</label>
+                    <img class="folder" src="<?php echo get_bloginfo('template_directory'); ?>/images/folder.png"/><label>Events</label>
                 </a>
                 <a class="folder-link" href="#">
-                    <img class="folder" src="images/folder.png"/><label>Mehr</label>
+                    <img class="folder" src="<?php echo get_bloginfo('template_directory'); ?>/images/folder.png"/><label>Mehr</label>
                 </a>
             </nav>
             <main>
@@ -35,12 +36,12 @@
                     <div class="event-header">
                         <h3>Fucks wie Gestern</h3>
                         <a href="https://www.facebook.com/events/451209352350346/">
-                            <img class="event-facebook-image" src="images/facebook.svg"/>
+                            <img class="event-facebook-image" src="<?php echo get_bloginfo('template_directory'); ?>/images/facebook.svg"/>
                         </a>
                     </div>
                     <div class="event-details">
                         <a href="https://www.facebook.com/events/451209352350346/">
-                            <img class="event-picture" src="images/event-picture.jpg" />
+                            <img class="event-picture" src="<?php echo get_bloginfo('template_directory'); ?>/images/event-picture.jpg" />
                         </a>
                         <p>Juni 7. 2019</p>
                         <p>Loftus Hall, Maybachufer 48, 12045 Berlin</p>
@@ -58,6 +59,6 @@
     </div>
     <div class="visitors">
         <p>Visitors:</p>
-        <img src="images/view-counter.png"/>
+        <img src="<?php echo get_bloginfo('template_directory'); ?>/images/view-counter.png"/>
     </div>
 </body>
