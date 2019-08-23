@@ -34,17 +34,17 @@
                 <h2>Was kommt noch?</h2>
                 <div class="event">
                     <div class="event-header">
-                        <h3>Fucks wie Gestern</h3>
-                        <a href="https://www.facebook.com/events/451209352350346/">
+                        <h3>HAFEN 2 (24hr Openair & Indoor)</h3>
+                        <a href="https://www.facebook.com/events/2247430998901903/">
                             <img class="event-facebook-image" src="<?php echo get_bloginfo('template_directory'); ?>/images/facebook.svg"/>
                         </a>
                     </div>
                     <div class="event-details">
-                        <a href="https://www.facebook.com/events/451209352350346/">
+                        <a href="https://www.facebook.com/events/2247430998901903/">
                             <img class="event-picture" src="<?php echo get_bloginfo('template_directory'); ?>/images/event-picture.jpg" />
                         </a>
-                        <p>Juni 7. 2019</p>
-                        <p>Loftus Hall, Maybachufer 48, 12045 Berlin</p>
+                        <p>Aug 24. 2019</p>
+                        <p>VELVET MONKEY, Herzbergstrasse 53, 10365 Lichtenberg, Berlin</p>
                     </div>
 
                 </div>
