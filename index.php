@@ -32,7 +32,7 @@
                 </a>
             </nav>
             <main>
-                <h2>Was kommt noch?</h2>
+                <h2>Nächste Event</h2>
                 <div class="event">
                     <div class="event-header">
                         <h3>HAFEN 2 (24hr Openair & Indoor)</h3>
