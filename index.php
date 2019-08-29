@@ -12,13 +12,7 @@
 </head>
 <body>
     <div class="main-content">
-        <header>
-            <a href="/"><img class="logo" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo.svg"/></a>
-            <div>
-                <h1>ANTISEMANTIC</h1>
-                <h3>Raven mit Anstand und Würde</h3>
-            </div>
-        </header>
+        <?php get_template_part( 'header' ); ?>
         <div class="content">
             <nav>
                 <a class="folder-link" href="/">
@@ -49,11 +43,7 @@
                 <button>Mehr events</button>
             </main>
         </div>
-        <footer>
-            <div class="spacer"></div>
-            <a class="footer-link" href="#">Impressum</a>
-            <a class="footer-link" href="#">Datenschutz</a>
-        </footer>
+        <?php get_template_part( 'footer' ); ?>
     </div>
     <div class="visitors">
         <p>Visitors:</p>
