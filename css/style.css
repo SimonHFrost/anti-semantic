@@ -1,7 +1,7 @@
 :root {
     --standard-border: solid 2px gray;
     --darker-border: solid 1px black;
-    --light-gray: #d9d9d9;
+    --light-gray: #e7e7e7;
 }
 
 * {
@@ -13,7 +13,7 @@
 .main-content {
     max-width: 800px;
     height: auto;
-    margin: 0 auto !important;
+    margin: 16px auto 0 auto !important;
 }
 
 @media (max-width: 600px) {
