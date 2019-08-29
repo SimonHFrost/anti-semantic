@@ -13,23 +13,34 @@
             </nav>
             <main>
                 <h2>Nächste Event</h2>
-                <div class="event">
-                    <div class="event-header">
-                        <h3>HAFEN 2 (24hr Openair & Indoor)</h3>
-                        <a href="https://www.facebook.com/events/2247430998901903/">
-                            <img class="event-facebook-image" src="<?php echo get_bloginfo('template_directory'); ?>/images/facebook.svg"/>
-                        </a>
-                    </div>
-                    <div class="event-details">
-                        <a href="https://www.facebook.com/events/2247430998901903/">
-                            <img class="event-picture" src="<?php echo get_bloginfo('template_directory'); ?>/images/event-picture.jpg" />
-                        </a>
-                        <p>Aug 24. 2019</p>
-                        <p>VELVET MONKEY, Herzbergstrasse 53, 10365 Lichtenberg, Berlin</p>
+
+
+
+                <?php $my_query = new WP_Query( "category_name={event}&posts_per_page={5}" );
+                    while ( $my_query->have_posts() ) : $my_query->the_post();
+                        global $post;
+                        $post_slug=$post->post_name;
+                ?>
+                    <div class="event">
+                        <div class="event-header">
+                            <h3><?php echo get_the_title(); ?></h3>
+                            <a href="<?php echo get_field('event_url') ?>">
+                                <img class="event-facebook-image" src="<?php echo get_bloginfo('template_directory'); ?>/images/facebook.svg"/>
+                            </a>
+                        </div>
+                        <div class="event-details">
+                            <a href="<?php echo get_field('event_url') ?>">
+                                <img class="event-picture" src="<?php echo get_field('event_image')['url'] ?>" />
+                            </a>
+                            <p><?php echo get_the_date(); ?></p>
+                            <p><?php echo get_field('event_location') ?></p>
+                        </div>
                     </div>
 
-                </div>
-                <button>Mehr events</button>
+                <?php
+                    endwhile;
+                    wp_reset_postdata();
+                ?>
             </main>
         </div>
         <?php get_template_part( 'footer' ); ?>
