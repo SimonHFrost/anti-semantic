@@ -12,11 +12,9 @@
                 </a>
             </nav>
             <main>
-                <h2>Nächste Event</h2>
+                <h2>Events</h2>
 
-
-
-                <?php $my_query = new WP_Query( "category_name={event}&posts_per_page={5}" );
+                <?php $my_query = new WP_Query( "category_name={event}" );
                     while ( $my_query->have_posts() ) : $my_query->the_post();
                         global $post;
                         $post_slug=$post->post_name;
@@ -24,12 +22,12 @@
                     <div class="event">
                         <div class="event-header">
                             <h3><?php echo get_the_title(); ?></h3>
-                            <a href="<?php echo get_field('event_url') ?>">
+                            <a href="<?php echo get_field('event_link') ?>">
                                 <img class="event-facebook-image" src="<?php echo get_bloginfo('template_directory'); ?>/images/facebook.svg"/>
                             </a>
                         </div>
                         <div class="event-details">
-                            <a href="<?php echo get_field('event_url') ?>">
+                            <a href="<?php echo get_field('event_link') ?>">
                                 <img class="event-picture" src="<?php echo get_field('event_image')['url'] ?>" />
                             </a>
                             <p><?php echo get_the_date(); ?></p>
