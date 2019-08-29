@@ -9,6 +9,8 @@
     <link rel='shortcut icon' type='image/x-icon' href="<?php echo get_bloginfo('template_directory'); ?>/favicon.ico" />
     <link href="<?php echo get_bloginfo('template_directory'); ?>/css/style.css" rel="stylesheet">
     <link href="<?php echo get_bloginfo('template_directory'); ?>/lib/normalize.css" rel="stylesheet">
+
+    <?php wp_head(); ?>
 </head>
 <body>
     <div class="main-content">
@@ -49,4 +51,5 @@
         <p>Visitors:</p>
         <img src="<?php echo get_bloginfo('template_directory'); ?>/images/view-counter.png"/>
     </div>
+    <?php wp_footer(); ?>
 </body>
