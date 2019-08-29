@@ -7,14 +7,23 @@
                 <a class="folder-link" href="/">
                     <img class="folder" src="<?php echo get_bloginfo('template_directory'); ?>/images/folder.png"/><label>Upcoming</label>
                 </a>
-                <a class="folder-link" href="#">
+                <a class="folder-link" href="past">
                     <img class="folder" src="<?php echo get_bloginfo('template_directory'); ?>/images/folder.png"/><label>Past</label>
                 </a>
             </nav>
             <main>
-                <h2>Events</h2>
+                <h2><?php echo get_the_title() ?></h2>
 
-                <?php $my_query = new WP_Query( "category_name={event}" );
+                <?php
+                    // Set category filter from url 
+                    if(strpos($_SERVER['REQUEST_URI'], 'past') !== false){
+                        $page_category = 'past';
+                    } else {
+                        $page_category = 'upcoming';
+                    }
+                ?>
+
+                <?php $my_query = new WP_Query( array( 'category_name' => 'event+'.$page_category ) );
                     while ( $my_query->have_posts() ) : $my_query->the_post();
                         global $post;
                         $post_slug=$post->post_name;
