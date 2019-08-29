@@ -1,4 +1,4 @@
-<?php /* Template Name: Manifesto */ ?>
+<?php /* Template Name: Generic */ ?>
 
 <?php get_template_part( 'head' ); ?>
 <body>
@@ -7,9 +7,11 @@
         <div class="content">
             <main>
             <?php
+                $title = apply_filters('the_title', $post->post_title);
                 $content = apply_filters('the_content', $post->post_content);
-                echo $content;
             ?>
+            <h1><?php echo $title ?></h1>
+            <?php echo $content ?>
             </main>
         </div>
         <?php get_template_part( 'footer' ); ?>
