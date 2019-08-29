@@ -22,13 +22,10 @@
         <div class="content">
             <nav>
                 <a class="folder-link" href="/">
-                    <img class="folder" src="<?php echo get_bloginfo('template_directory'); ?>/images/folder.png"/><label>Heim</label>
+                    <img class="folder" src="<?php echo get_bloginfo('template_directory'); ?>/images/folder.png"/><label>Upcoming</label>
                 </a>
                 <a class="folder-link" href="#">
-                    <img class="folder" src="<?php echo get_bloginfo('template_directory'); ?>/images/folder.png"/><label>Events</label>
-                </a>
-                <a class="folder-link" href="#">
-                    <img class="folder" src="<?php echo get_bloginfo('template_directory'); ?>/images/folder.png"/><label>Mehr</label>
+                    <img class="folder" src="<?php echo get_bloginfo('template_directory'); ?>/images/folder.png"/><label>Past</label>
                 </a>
             </nav>
             <main>
