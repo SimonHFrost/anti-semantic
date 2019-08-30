@@ -161,6 +161,8 @@ main .event .event-details .event-picture {
 @media (max-width: 600px) {
     main .event .event-details .event-picture {
         filter: grayscale(0);
+        width: 100%;
+        height: auto;
     }
 }
 
