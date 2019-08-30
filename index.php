@@ -7,16 +7,7 @@
             <main>
                 <h2><?php echo get_the_title() ?></h2>
 
-                <?php
-                    // Set category filter from url 
-                    if(strpos($_SERVER['REQUEST_URI'], 'past') !== false){
-                        $page_category = 'past';
-                    } else {
-                        $page_category = 'upcoming';
-                    }
-                ?>
-
-                <?php $my_query = new WP_Query( array( 'category_name' => 'event+'.$page_category ) );
+                <?php $my_query = new WP_Query( array( 'category_name' => 'event+'.getUrl() ) );
                     while ( $my_query->have_posts() ) : $my_query->the_post();
                         global $post;
                         $post_slug=$post->post_name;
