@@ -37,7 +37,7 @@
                         </div>
                         <div class="event-details">
                             <a href="<?php echo get_field('event_link') ?>">
-                                <img class="event-picture" src="<?php echo get_field('event_image')['url'] ?>" />
+                                <img class="event-picture" src="<?php echo get_field('event_image')['url'] ?>" alt="<?php echo get_field('event_image')['alt'] ?>" />
                             </a>
                             <p><?php echo get_field('event_date'); ?></p>
                             <p><?php echo get_field('event_location') ?></p>
