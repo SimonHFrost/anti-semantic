@@ -120,8 +120,10 @@ main {
 
 main .event {
     margin-bottom: 32px;
-    width: 400px;
     border: var(--darker-border);
+    /* FIXME don't know why I have to use content-box here */
+    box-sizing: content-box;
+    width: 400px;
 }
 
 main .event:last-of-type {
@@ -152,7 +154,8 @@ main .event .event-details {
 main .event .event-details .event-picture {
     transition: filter 100ms ease;
     filter: grayscale(100);
-    width: 100%;
+    width: 400px;
+    height: 225px;
 }
 
 @media (max-width: 600px) {
