@@ -106,6 +106,10 @@ nav .folder-link {
     align-items: center;
 }
 
+nav .folder-link.active {
+    font-weight: 700;
+}
+
 @media (max-width: 600px) {
     nav .folder-link {
         margin-bottom: 0;

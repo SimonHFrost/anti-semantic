@@ -3,14 +3,7 @@
     <div class="main-content">
         <?php get_template_part( 'header' ); ?>
         <div class="content">
-            <nav>
-                <a class="folder-link" href="/">
-                    <img class="folder" src="<?php echo get_bloginfo('template_directory'); ?>/images/folder.png"/><label>Upcoming</label>
-                </a>
-                <a class="folder-link" href="past">
-                    <img class="folder" src="<?php echo get_bloginfo('template_directory'); ?>/images/folder.png"/><label>Past</label>
-                </a>
-            </nav>
+            <?php get_template_part('nav'); ?>
             <main>
                 <h2><?php echo get_the_title() ?></h2>
 
