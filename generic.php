@@ -1,9 +1,9 @@
 <?php /* Template Name: Generic */ ?>
 
-<?php get_template_part( 'head' ); ?>
+<?php get_template_part( 'partial/head' ); ?>
 <body>
     <div class="main-content">
-        <?php get_template_part( 'header' ); ?>
+        <?php get_template_part( 'partial/header' ); ?>
         <div class="content">
             <main>
             <?php
@@ -14,7 +14,7 @@
             <?php echo $content ?>
             </main>
         </div>
-        <?php get_template_part( 'footer' ); ?>
+        <?php get_template_part( 'partial/footer' ); ?>
     </div>
     <div class="visitors">
         <p>Visitors:</p>
