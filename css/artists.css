@@ -1,5 +1,13 @@
+.artist-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
 .artist-box {
+    display: block;
     text-align: center;
+    border: 1px solid black;
 }
 
 .artist-box .artist-image {
