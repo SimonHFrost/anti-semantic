@@ -1,0 +1,8 @@
+.artist-box {
+    text-align: center;
+}
+
+.artist-box .artist-image {
+    width: 64px;
+    height: 64px;
+}
