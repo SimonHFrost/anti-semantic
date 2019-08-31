@@ -12,15 +12,12 @@
     border: var(--standard-border);
     height: 0;
     padding-bottom: 100%;
-}
-
-.artist-image {
-    width: 64px;
-    height: 64px;
+    background-size: cover;
+    margin-bottom: 40px;
 }
 
 .artist-name {
     margin: 0;
     position: absolute;
-    bottom: -20px;
+    bottom: -32px;
 }

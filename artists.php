@@ -9,28 +9,22 @@
             <main>
                 <h2>Artists</h2>
                 <div class="artist-grid">
-                    <a href="/artists#artist1" class="artist-box">
-                        <img class="artist-image" src="<?php echo get_bloginfo('template_directory'); ?>/images/artist1.jpg" />
+                    <a href="#artist1" class="artist-box" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/artist1.jpg'"?>
                         <h3 class="artist-name">Simon Frost</h3>
                     </a>
-                    <a href="/artists#artist2" class="artist-box">
-                        <img class="artist-image" src="<?php echo get_bloginfo('template_directory'); ?>/images/artist1.jpg" />
+                    <a href="#artist2" class="artist-box" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/artist1.jpg'"?>
                         <h3 class="artist-name">Simon Frost</h3>
                     </a>
-                    <a href="/artists#artist3" class="artist-box">
-                        <img class="artist-image" src="<?php echo get_bloginfo('template_directory'); ?>/images/artist1.jpg" />
+                    <a href="#artist3" class="artist-box" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/artist1.jpg'"?>
                         <h3 class="artist-name">Simon Frost</h3>
                     </a>
-                    <a href="/artists#artist4" class="artist-box">
-                        <img class="artist-image" src="<?php echo get_bloginfo('template_directory'); ?>/images/artist1.jpg" />
+                    <a href="#artist4" class="artist-box" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/artist1.jpg'"?>
                         <h3 class="artist-name">Simon Frost</h3>
                     </a>
-                    <a href="/artists#artist5" class="artist-box">
-                        <img class="artist-image" src="<?php echo get_bloginfo('template_directory'); ?>/images/artist1.jpg" />
+                    <a href="#artist5" class="artist-box" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/artist1.jpg'"?>
                         <h3 class="artist-name">Simon Frost</h3>
                     </a>
-                    <a href="/artists#artist6" class="artist-box">
-                        <img class="artist-image" src="<?php echo get_bloginfo('template_directory'); ?>/images/artist1.jpg" />
+                    <a href="#artist6" class="artist-box" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/artist1.jpg'"?>
                         <h3 class="artist-name">Simon Frost</h3>
                     </a>
                 </div>
