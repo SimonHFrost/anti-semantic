@@ -1,6 +1,6 @@
 <!-- url loosely matches categories and is used for filtering -->
 
-<?php 
+<?php
     function getUrl() {
         if(strpos($_SERVER['REQUEST_URI'], 'past') !== false){
             return 'past';
