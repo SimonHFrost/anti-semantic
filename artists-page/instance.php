@@ -8,13 +8,9 @@
             <?php get_template_part('partial/nav'); ?>
             <main>
                 <h2><?php echo get_the_title(); ?></h2>
-                <h3>Instance</h3>
 
                 <p><?php echo get_field('bio') ?></p>
-
-
-
-
+                <img src="<?php echo get_field('bio_image')['url'] ?>"/>
 
             </main>
         </div>
