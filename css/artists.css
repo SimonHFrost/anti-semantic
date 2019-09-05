@@ -21,3 +21,16 @@
     position: absolute;
     bottom: -40px;
 }
+
+.artist-columns {
+    display: flex;
+}
+
+.artist-column {
+    flex: 1;
+    padding: 5px;
+}
+
+.bio-image {
+    width: 125px;
+}

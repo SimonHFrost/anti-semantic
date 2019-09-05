@@ -7,11 +7,17 @@
         <div class="content">
             <?php get_template_part('partial/nav'); ?>
             <main>
-                <h2><?php echo get_the_title(); ?></h2>
-
-                <p><?php echo get_field('bio') ?></p>
-                <img src="<?php echo get_field('bio_image')['url'] ?>"/>
-
+                <div class="artist-columns">
+                    <div>
+                        <img class="bio-image" src="<?php echo get_field('bio_image')['url'] ?>"/>
+                    </div>
+                    <div class="artist-column">
+                        <h2><?php echo get_the_title(); ?></h2>
+                        <p><?php echo get_field('bio') ?></p>
+                    </div>
+                    <div class="artist-column">
+                        <p><?php echo get_field('bio2') ?></p>
+                    </div>
             </main>
         </div>
         <?php get_template_part( 'partial/footer' ); ?>
