@@ -17,7 +17,7 @@
                         $post_slug=$post->post_name;
                 ?>
 
-                    <a href="#artist1" class="artist-box" style="background-image: url('<?php echo get_field('profile_picture')['url'] ?>')"?>
+                    <a href="<?php echo get_permalink() ?>" class="artist-box" style="background-image: url('<?php echo get_field('profile_picture')['url'] ?>')"?>
                         <h3 class="artist-name"><?php echo get_the_title(); ?></h3>
                     </a>
 
