@@ -2,6 +2,7 @@
     --standard-border: solid 2px gray;
     --darker-border: solid 1px black;
     --light-gray: #e7e7e7;
+    --dark-gray: #aaaaaa;
 }
 
 * {
@@ -200,7 +201,6 @@ footer {
     display: flex;
     align-items: center;
     height: 40px;
-    background-color: var(--light-gray);
     border: var(--standard-border);
 }
 
