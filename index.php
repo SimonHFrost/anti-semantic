@@ -7,6 +7,11 @@
             <main>
                 <h2><?php echo get_the_title() ?></h2>
 
+                <p><?php
+                    $content = apply_filters('the_content', $post->post_content);
+                    echo $content
+                ?></p>
+
                 <?php $my_query = new WP_Query( array( 'category_name' => 'event+'.getUrl() ) );
                     while ( $my_query->have_posts() ) : $my_query->the_post();
                         global $post;
