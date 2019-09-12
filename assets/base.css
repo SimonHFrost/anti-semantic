@@ -2,7 +2,6 @@
     --standard-border: solid 2px gray;
     --darker-border: solid 1px black;
     --light-gray: #e7e7e7;
-    --dark-gray: #aaaaaa;
 }
 
 * {
@@ -202,7 +201,7 @@ footer {
     align-items: center;
     height: 40px;
     border: var(--standard-border);
-    background-color: var(--dark-gray);
+    background-color: var(--light-gray);
 }
 
 footer .spacer {
