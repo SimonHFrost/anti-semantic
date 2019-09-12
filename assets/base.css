@@ -202,6 +202,7 @@ footer {
     align-items: center;
     height: 40px;
     border: var(--standard-border);
+    background-color: var(--dark-gray);
 }
 
 footer .spacer {
