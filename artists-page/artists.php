@@ -7,8 +7,6 @@
         <div class="content">
             <?php get_template_part('partial/nav'); ?>
             <main>
-                <h2>Artists</h2>
-
                 <div class="artist-grid">
 
                 <?php $my_query = new WP_Query( array( 'category_name' => 'artists' ) );

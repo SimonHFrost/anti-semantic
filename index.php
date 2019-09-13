@@ -5,8 +5,6 @@
         <div class="content">
             <?php get_template_part('partial/nav'); ?>
             <main>
-                <h2><?php echo get_the_title() ?></h2>
-
                 <p><?php
                     $content = apply_filters('the_content', $post->post_content);
                     echo $content
