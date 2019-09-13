@@ -7,7 +7,7 @@
             <main>
                 <p><?php
                     $content = apply_filters('the_content', $post->post_content);
-                    echo $content
+                    echo $content;
                 ?></p>
 
                 <?php $my_query = new WP_Query( array( 'category_name' => 'event+'.getUrl() ) );
