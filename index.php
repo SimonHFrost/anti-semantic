@@ -10,7 +10,16 @@
                     echo $content;
                 ?></p>
 
-                <?php $my_query = new WP_Query( array( 'category_name' => 'event+'.getUrl() ) );
+                <?php
+                    function getAntisemanticUrl() {
+                        if(strpos($_SERVER['REQUEST_URI'], 'past') !== false){
+                            return 'past';
+                        } else {
+                            return 'upcoming';
+                        }
+                    }
+
+                    $my_query = new WP_Query( array( 'category_name' => 'event+'.getAntisemanticUrl() ) );
                     while ( $my_query->have_posts() ) : $my_query->the_post();
                         global $post;
                         $post_slug=$post->post_name;
