@@ -23,9 +23,12 @@
 }
 
 .artist-name {
+    display: inline-block;
     margin: 0;
     position: absolute;
-    bottom: -40px;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
 }
 
 .artist-columns {
