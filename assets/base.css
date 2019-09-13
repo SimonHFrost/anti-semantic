@@ -156,8 +156,8 @@ main .event .event-details {
 }
 
 main .event .event-details .event-picture {
-    transition: filter 100ms ease;
-    filter: grayscale(100);
+    transition: filter 150ms ease;
+    filter: grayscale(1);
     width: 400px;
     height: 225px;
 }

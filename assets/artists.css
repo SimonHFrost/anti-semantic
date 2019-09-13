@@ -14,6 +14,12 @@
     padding-bottom: 100%;
     background-size: cover;
     margin-bottom: 40px;
+    filter: grayscale(1);
+    transition: filter 150ms ease;
+}
+
+.artist-box:hover {
+    filter: grayscale(0);
 }
 
 .artist-name {
