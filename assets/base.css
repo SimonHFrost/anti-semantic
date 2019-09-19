@@ -95,8 +95,14 @@ nav {
 }
 
 nav .folder {
-    width: 40px;
+    width: 50px;
+    height: 35px;
     margin-bottom: 8px;
+    background-image: url("../images/folder.png");
+}
+
+nav .folder-link.active .folder {
+    background-image: url("../images/folder-active.png");
 }
 
 nav .folder-link {
@@ -109,6 +115,7 @@ nav .folder-link {
 nav .folder-link.active {
     font-weight: 700;
 }
+
 
 @media (max-width: 600px) {
     nav .folder-link {
