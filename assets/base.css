@@ -235,13 +235,15 @@ footer .footer-link {
 /* Trippy effect */
 
 @keyframes trip-out {
-    from { box-shadow: 1px 1px 0px #F00; }
-    50%   { box-shadow: -1px 1px 0px #0F0; }
-    to   { box-shadow: 1px -1px 0px #00F; }
+    from { box-shadow: 2px 2px 0px #F00; }
+    25%   { box-shadow: -2px 2px 0px #0F0; }
+    50%   { box-shadow: -2px -2px 0px #FF0; }
+    75%   { box-shadow: 2px -2px 0px #00F; }
+    to   { box-shadow: 2px 2px 0px #F00; }
 }
 
 .main-content,
 .event {
-    animation: 20s trip-out infinite alternate;
+    animation: 20s trip-out infinite;
     /* box-shadow: 0px 0px 5px #ddd; */
 }
