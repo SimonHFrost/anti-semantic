@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "berthold";
+    src: url("berthold.otf");
+}
+
 :root {
     --standard-border: solid 2px gray;
     --darker-border: solid 1px black;
@@ -48,6 +53,7 @@ header h3 {
 header h1 {
     letter-spacing: 4px;
     margin-bottom: 8px;
+    font-family: 'berthold';
 }
 
 header .logo {
