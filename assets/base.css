@@ -242,8 +242,7 @@ footer .footer-link {
     to   { box-shadow: 2px 2px 0px #F00; }
 }
 
-.main-content,
-.event {
+.main-content {
     animation: 20s trip-out infinite;
     /* box-shadow: 0px 0px 5px #ddd; */
 }
