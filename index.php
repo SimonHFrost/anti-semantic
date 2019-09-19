@@ -20,6 +20,14 @@
                     }
 
                     $my_query = new WP_Query( array( 'category_name' => 'event+'.getAntisemanticUrl() ) );
+
+                    $count = $my_query->found_posts;
+                    if (!$count) {
+                        echo '<h1>No upcoming events</h1>';
+                    } else {
+                        echo '<h1>Upcoming events</h1>';
+                    }
+
                     while ( $my_query->have_posts() ) : $my_query->the_post();
                         global $post;
                         $post_slug=$post->post_name;
