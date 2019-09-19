@@ -57,6 +57,24 @@
     width: 125px;
 }
 
-.social img {
+.social {
+    position: relative;
+    text-decoration: none;
+}
+
+.social img:nth-child(2) {
     width: 32px;
+    transition: filter 150ms ease;
+    filter: opacity(1);
+    position: absolute;
+    left: 0;
+}
+
+.social img:nth-child(2):hover {
+    filter: opacity(0);
+}
+
+.social img:nth-child(1) {
+    width: 32px;
+
 }
