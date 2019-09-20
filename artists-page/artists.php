@@ -15,7 +15,7 @@
                         $post_slug=$post->post_name;
                 ?>
                     <?php
-                        $style = 'box-shadow: 2px 2px 0px '.get_field('highlight_color').';';
+                        $style = 'color: '.get_field('highlight_color').';';
                     ?>
 
                     <a

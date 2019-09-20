@@ -244,5 +244,20 @@ footer .footer-link {
 
 .main-content {
     animation: 20s trip-out infinite;
-    /* box-shadow: 0px 0px 5px #ddd; */
+}
+
+@keyframes moving-border {
+    from { box-shadow: 2px 2px 0px; }
+    25%   { box-shadow: -2px 2px 0px; }
+    50%   { box-shadow: -2px -2px 0px; }
+    75%   { box-shadow: 2px -2px 0px; }
+    to   { box-shadow: 2px 2px 0px; }
+}
+
+.artist-image-wrapper {
+    animation: 20s moving-border infinite;
+}
+
+.bio-image {
+    animation: 20s moving-border infinite;
 }

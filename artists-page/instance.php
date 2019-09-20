@@ -9,7 +9,7 @@
             <main>
                 <div class="artist-columns">
                     <div>
-                        <img class="bio-image" src="<?php echo get_field('bio_image')['url'] ?>"/>
+                        <img class="bio-image" style="color: <?php echo get_field('highlight_color')?>" src="<?php echo get_field('bio_image')['url'] ?>"/>
                     </div>
                     <div class="artist-column">
                         <h2><?php echo get_the_title(); ?></h2>
