@@ -3,6 +3,11 @@
     src: url("berthold.otf");
 }
 
+@font-face {
+    font-family: "anticlimax";
+    src: url("anticlimax.ttf");
+}
+
 :root {
     --standard-border: solid 2px gray;
     --darker-border: solid 1px black;
@@ -233,6 +238,11 @@ footer .footer-link {
 
 .visitors {
     text-align: center;
+}
+
+.visitors .view-counter {
+    font-family: 'anticlimax';
+    font-size: 24px;
 }
 
 /* Trippy effect */
