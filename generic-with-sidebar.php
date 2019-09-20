@@ -19,7 +19,12 @@
     </div>
     <div class="visitors">
         <p>Visitors:</p>
-        <img src="<?php echo get_bloginfo('template_directory'); ?>/images/view-counter.png"/>
+        <?php 
+            if ($_SERVER['REQUEST_URI'] === '/') {
+                setWebsiteView();
+            }
+        ?>
+        <div class="view-counter">0000<?php echo getWebsiteViews(); ?></div>
     </div>
     <?php wp_footer(); ?>
 </body>
