@@ -61,6 +61,8 @@
     <div class="visitors">
         <p>Visitors:</p>
         <img src="<?php echo get_bloginfo('template_directory'); ?>/images/view-counter.png"/>
+        <?php setPostViews(get_the_ID()); ?>
+        <?php echo getPostViews(get_the_ID()); ?>
     </div>
     <?php wp_footer(); ?>
 </body>
