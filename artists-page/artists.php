@@ -14,11 +14,18 @@
                         global $post;
                         $post_slug=$post->post_name;
                 ?>
+                    <?php
+                        $style = 'box-shadow: 2px 2px 0px '.get_field('highlight_color').';';
+                    ?>
 
-                    <a href="<?php echo get_permalink() ?>" class="artist-box" style="background-image: url('<?php echo get_field('profile_picture')['url'] ?>')"?>
+                    <a
+                        href="<?php echo get_permalink() ?>"
+                        class="artist-box">
+                        <div class="artist-image-wrapper" style="<?php echo $style; ?>">
+                            <img class="artist-image" src="<?php echo get_field('profile_picture')['url'] ?>" />
+                        </div>
                         <h3 class="artist-name"><?php echo get_the_title(); ?></h3>
                     </a>
-
 
                 <?php
                     endwhile;

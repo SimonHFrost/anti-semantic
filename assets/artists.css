@@ -15,26 +15,22 @@
     display: block;
     position: relative;
     text-align: center;
-    border: var(--standard-border);
-    height: 0;
-    padding-bottom: 100%;
-    background-size: cover;
     margin-bottom: 40px;
-    filter: grayscale(1);
-    transition: filter 150ms ease;
 }
 
-.artist-box:hover {
+.artist-image {
+    width: 100%;
+    filter: grayscale(1);
+    transition: filter 150ms ease;
+    border: var(--standard-border);
+}
+
+.artist-image:hover {
     filter: grayscale(0);
 }
 
 .artist-name {
-    display: inline-block;
-    margin: 0;
-    position: absolute;
-    top: calc(100% + 10px);
-    left: 0;
-    width: 100%;
+    text-align: center;
 }
 
 .artist-columns {
