@@ -18,7 +18,8 @@
 
                     $count = $my_query->found_posts;
                     if (!$count) {
-                        echo '<h1>No upcoming events (for now...)</h1>';
+                        echo '<h1 class="no-event-message">No upcoming events</h1>';
+                        echo '<h1 class="no-event-message">(for now...)</h1>';
                     }
 
                     while ( $my_query->have_posts() ) : $my_query->the_post();

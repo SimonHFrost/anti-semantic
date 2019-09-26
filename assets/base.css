@@ -24,6 +24,12 @@ h1 {
     font-family: 'berthold';
 }
 
+@media (max-width: 600px) {
+    .no-event-message {
+        text-align: center;
+    }
+} 
+
 .main-content {
     max-width: 800px;
     height: auto;
@@ -247,6 +253,10 @@ footer .spacer {
 
 footer .footer-link {
     margin-right: 16px;
+}
+
+footer .footer-link:first-of-type {
+    margin-left: 16px;
 }
 
 .visitors {
