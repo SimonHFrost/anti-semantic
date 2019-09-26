@@ -289,3 +289,13 @@ footer .footer-link {
 .bio-image {
     animation: 20s moving-border infinite;
 }
+
+.mobile-only {
+    display: none;
+}
+
+@media (min-width: 600px) {
+    .mobile-only {
+        display: block;
+    }
+}
