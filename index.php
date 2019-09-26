@@ -65,7 +65,7 @@
                 setWebsiteView();
             }
         ?>
-        <div class="view-counter">0000<?php echo getWebsiteViews(); ?></div>
+        <div class="view-counter">0000000<?php echo getWebsiteViews(); ?></div>
     </div>
     <?php wp_footer(); ?>
 </body>
