@@ -13,7 +13,6 @@
                     </div>
                     <div>
                         <div class="artist-header">
-                            <h2 class="header-trippy" style="color: <?php echo get_field('highlight_color')?>"><?php echo get_the_title(); ?></h2>
                             <h2><?php echo get_the_title(); ?></h2>
                         </div>
                         <img class="artist-image-instance-page" src="<?php echo get_field('profile_picture')['url'] ?>" style="color: <?php echo get_field('highlight_color') ?>"/>
