@@ -25,6 +25,29 @@
     border: var(--standard-border);
 }
 
+.header-trippy {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    animation: 20s moving-translate infinite;
+}
+
+@keyframes moving-translate {
+    from { transform: translate(1px ,1px) }
+    25%   { transform: translate(-1px, 1px) }
+    50%   { transform: translate(-1px, -1px) }
+    75%   { transform: translate(1px , -1px) }
+    to   { transform: translate(1px , 1px) }
+}
+
+.artist-header {
+    position: relative;
+}
+
+.artist-header h3 {
+    margin: 0;
+}
+
 .artist-image:hover {
     filter: grayscale(0);
 }
@@ -48,7 +71,7 @@
 
 .artist-column {
     flex: 1;
-    padding: 5px;
+    padding-right: 5px;
 }
 
 @media(max-width: 600px) {

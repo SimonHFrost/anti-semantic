@@ -12,7 +12,10 @@
                         <img class="bio-image" style="color: <?php echo get_field('highlight_color')?>" src="<?php echo get_field('bio_image')['url'] ?>"/>
                     </div>
                     <div>
-                        <h2><?php echo get_the_title(); ?></h2>
+                        <div class="artist-header">
+                            <h3 class="header-trippy" style="color: <?php echo get_field('highlight_color')?>"><?php echo get_the_title(); ?></h3>
+                            <h3><?php echo get_the_title(); ?></h3>
+                        </div>
                         <div class="artist-columns">
                             <div class="artist-column">
                                 <p><?php echo get_field('bio') ?></p>
