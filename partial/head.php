@@ -1,5 +1,7 @@
 <head>
-    <title>ANTISEMANTIC</title>
+    <?php
+        echo "<title>ANTISEMANTIC - ".get_the_title()."</title>";
+    ?>
     <meta charset="utf-8" /> 
     <link rel="shortcut icon" href="<?php echo get_bloginfo('template_directory'); ?>/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
