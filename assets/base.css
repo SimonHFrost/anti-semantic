@@ -32,7 +32,8 @@ h1 {
 
 @media (max-width: 600px) {
     .main-content {
-        width: 100vw;
+        width: calc(100vw - 4px);
+        margin: 2px !important;
     }
 }
 
@@ -268,7 +269,8 @@ footer .footer-link {
     to   { box-shadow: 1px 1px 0px; }
 }
 
-.artist-image-wrapper {
+.artist-image-wrapper,
+.artist-image-instance-page {
     animation: 20s moving-border infinite;
 }
 
