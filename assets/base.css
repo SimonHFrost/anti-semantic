@@ -255,7 +255,13 @@ footer .footer-link {
     margin-right: 16px;
 }
 
-footer .footer-link:first-of-type {
+/* Margin on both first and second .footer-links because one is hidden */
+
+footer .footer-link:first-child {
+    margin-left: 16px;
+}
+
+footer .footer-link:nth-child(2) {
     margin-left: 16px;
 }
 
@@ -307,5 +313,15 @@ footer .footer-link:first-of-type {
 @media (min-width: 600px) {
     .mobile-only {
         display: block;
+    }
+}
+
+.desktop-only {
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .mobile-only {
+        display: none;
     }
 }
