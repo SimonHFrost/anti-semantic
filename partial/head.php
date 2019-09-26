@@ -1,6 +1,7 @@
 <head>
     <?php
-        echo "<title>ANTISEMANTIC - ".get_the_title()."</title>";
+        $constructed_title = "ANTISEMANTIC - ".get_the_title();
+        echo "<title>".$constructed_title."</title>";
     ?>
     <meta charset="utf-8" /> 
     <link rel="shortcut icon" href="<?php echo get_bloginfo('template_directory'); ?>/favicon.png">
@@ -9,7 +10,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     
-    <meta property="og:title" content="ANTISEMANTIC" />
+    <meta property="og:title" content="<?php echo $constructed_title ?>"/>
     <meta property="og:type" content="website" />
     <meta property="og:image" content="http://www.antisemantic.de/wp-content/themes/anti-semantic/images/logo.svg" />
     <meta property="og:url" content="<?php echo get_permalink() ?>" />
