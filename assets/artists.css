@@ -27,6 +27,7 @@
 
 .header-trippy {
     position: absolute;
+    opacity: 0.5;
     top: 0;
     z-index: -1;
     animation: 20s moving-translate infinite;
