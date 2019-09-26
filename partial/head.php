@@ -11,6 +11,14 @@
     
     <link rel="icon" type="image/png" href="favicon.png">
 
+    <meta property="og:title" content="ANTISEMANTIC" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="http://www.antisemantic.de/wp-content/themes/anti-semantic/images/logo.svg" />
+    <meta property="og:url" content="PERMALINK" />
+
+    <meta property="og:description" content="Berlin based label and collective." />
+    <meta property="og:site_name" content="antisemantic.de" />
+
     <link href="<?php echo get_bloginfo('template_directory'); ?>/lib/normalize.css" rel="stylesheet">
     <link href="<?php echo get_bloginfo('template_directory'); ?>/assets/base.css" rel="stylesheet">
     <link href="<?php echo get_bloginfo('template_directory'); ?>/assets/artists.css" rel="stylesheet">
