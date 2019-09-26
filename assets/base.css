@@ -256,16 +256,16 @@ footer .footer-link {
     to   { box-shadow: 2px 2px 0px #F00; }
 }
 
-.main-content {
+.main-content.trippy {
     animation: 20s trip-out infinite;
 }
 
 @keyframes moving-border {
-    from { box-shadow: 2px 2px 0px; }
-    25%   { box-shadow: -2px 2px 0px; }
-    50%   { box-shadow: -2px -2px 0px; }
-    75%   { box-shadow: 2px -2px 0px; }
-    to   { box-shadow: 2px 2px 0px; }
+    from { box-shadow: 1px 1px 0px; }
+    25%   { box-shadow: -1px 1px 0px; }
+    50%   { box-shadow: -1px -1px 0px; }
+    75%   { box-shadow: 1px -1px 0px; }
+    to   { box-shadow: 1px 1px 0px; }
 }
 
 .artist-image-wrapper {

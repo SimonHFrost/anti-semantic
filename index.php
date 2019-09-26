@@ -1,6 +1,6 @@
 <?php get_template_part( 'partial/head' ); ?>
 <body>
-    <div class="main-content">
+    <div class="main-content trippy">
         <?php get_template_part( 'partial/header' ); ?>
         <div class="content">
             <?php get_template_part('partial/nav'); ?>
