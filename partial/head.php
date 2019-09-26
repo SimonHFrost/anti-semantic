@@ -9,8 +9,6 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     
-    <link rel="icon" type="image/png" href="favicon.png">
-
     <meta property="og:title" content="ANTISEMANTIC" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="http://www.antisemantic.de/wp-content/themes/anti-semantic/images/logo.svg" />
