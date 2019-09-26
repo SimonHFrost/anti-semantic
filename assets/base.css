@@ -307,21 +307,21 @@ footer .footer-link:nth-child(2) {
 }
 
 .mobile-only {
-    display: none;
-}
-
-@media (min-width: 600px) {
-    .mobile-only {
-        display: block;
-    }
-}
-
-.desktop-only {
     display: block;
 }
 
 @media (max-width: 600px) {
     .mobile-only {
         display: none;
+    }
+}
+
+.desktop-only {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .desktop-only {
+        display: block;
     }
 }
