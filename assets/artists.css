@@ -50,6 +50,20 @@
     font-size: 16px;
 }
 
+@media (max-width: 600px) {
+    .artist-header h2 {
+        text-align: center;
+    }
+
+    /* Center trippy header */
+    .artist-header h2.header-trippy {
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+}
+
 .artist-image:hover {
     filter: grayscale(0);
 }
@@ -88,7 +102,18 @@
     width: 125px;
 }
 
+.artist-image-instance-page {
+    width: 60%;
+    margin: 16px auto;
+    border: var(--standard-border);
+    display: none;
+}
+
 @media (max-width: 600px) {
+    .artist-image-instance-page {
+        display: block;
+    }
+
     .bio-image {
         display: none;
     }
