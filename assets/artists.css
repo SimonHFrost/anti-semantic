@@ -45,8 +45,9 @@
     position: relative;
 }
 
-.artist-header h3 {
+.artist-header h2 {
     margin: 0;
+    font-size: 16px;
 }
 
 .artist-image:hover {
@@ -59,11 +60,6 @@
 
 .artist-columns {
     display: flex;
-}
-
-.artist-columns h2 {
-    padding-left: 5px;
-    margin: 0;
 }
 
 .artist-columns p {

@@ -13,8 +13,8 @@
                     </div>
                     <div>
                         <div class="artist-header">
-                            <h3 class="header-trippy" style="color: <?php echo get_field('highlight_color')?>"><?php echo get_the_title(); ?></h3>
-                            <h3><?php echo get_the_title(); ?></h3>
+                            <h2 class="header-trippy" style="color: <?php echo get_field('highlight_color')?>"><?php echo get_the_title(); ?></h2>
+                            <h2><?php echo get_the_title(); ?></h2>
                         </div>
                         <div class="artist-columns">
                             <div class="artist-column">
