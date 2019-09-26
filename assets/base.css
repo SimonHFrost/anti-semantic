@@ -55,13 +55,19 @@ header {
 }
 
 header h1,
-header h3 {
+header h2 {
     margin: 0;
 }
 
 header h1 {
     letter-spacing: 4px;
     margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+header h2 {
+    font-family: 'berthold';
+    font-size: 24px;
 }
 
 @media (max-width: 600px) {

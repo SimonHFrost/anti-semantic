@@ -5,11 +5,6 @@
         <div class="content">
             <?php get_template_part('partial/nav'); ?>
             <main>
-                <p><?php
-                    $content = apply_filters('the_content', $post->post_content);
-                    echo $content;
-                ?></p>
-
                 <?php
                     function getAntisemanticUrl() {
                         if(strpos($_SERVER['REQUEST_URI'], 'past') !== false){
