@@ -5,6 +5,7 @@
     <meta charset="utf-8" /> 
     <link rel="shortcut icon" href="<?php echo get_bloginfo('template_directory'); ?>/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Berlin based label and collective." />
 
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     
